@@ -1,0 +1,33 @@
+{
+  "name": "hapi-health-check",
+  "version": "1.0.0",
+  "description": "Hapi.js plugin that reports back health of dependencies (mongo, redis, etc)",
+  "main": "index.js",
+  "scripts": {
+    "build": "&& npm run transpile",
+    "transpile": "babel src --out-dir lib --source-maps inline --stage 0",
+    "watch": "npm run transpile --watch",
+    "test": "mocha --compilers js:babel/register test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tylergarlick@github.com/TylerGarlick/hapi-health-check.git"
+  },
+  "keywords": [
+    "Hapi.js",
+    "status",
+    "healthcheck",
+    "api"
+  ],
+  "author": "Tyler Garlick <tjgarlick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylerGarlick/hapi-health-check/issues"
+  },
+  "homepage": "https://github.com/TylerGarlick/hapi-health-check#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}

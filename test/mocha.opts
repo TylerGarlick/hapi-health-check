@@ -1,0 +1,6 @@
+--recursive
+--colors
+--compilers js:babel/register
+--require ./test/helper.js
+--reporter Min
+--full-trace
